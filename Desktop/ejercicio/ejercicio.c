@@ -11,6 +11,20 @@ int main()
         printf("%2.f",notas[i]);
     }
 
-    calPromedio(notas, tamanio);
+    printf("\nEl promedio es: %2.f ", calPromedio(notas, tamanio));
+}
+
+float calPromedio(float *vecto, int tamanio)
+{
+    float suma, promedio;
+
+    for (int i = 0; i < tamanio; i++)
+    {
+        suma= suma + vecto[i];
+    }
+
+    promedio= suma / tamanio;
+
+    return promedio;
 }
 
